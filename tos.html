@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Color Roles — Terms of Service</title>
+  <meta name="description" content="Terms of Service — Color Roles Bot. Beautiful palettes, concise legally-minded terms."/>
+  <style>
+    :root{
+      --bg:#071018;
+      --panel:#0b0d0f;
+      --muted:#9aa0a6;
+      --glass: rgba(255,255,255,0.03);
+      --card-radius:16px;
+      --accent-1:#FFB6C1; /* pastel */
+      --accent-2:#FF6EC7; /* neon */
+      --accent-3:#2F4F4F; /* dark */
+      --mono: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#03101a 0%,#071018 100%);color:#e8eef1;font-family:var(--mono);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:1080px;margin:36px auto;padding:28px}
+    .hero{display:flex;gap:18px;align-items:center;background:linear-gradient(90deg,var(--accent-1),var(--accent-2),var(--accent-3));padding:20px;border-radius:18px;box-shadow:0 10px 40px rgba(2,6,10,0.7)}
+    .logo{width:80px;height:80px;border-radius:14px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-weight:800;color:#07090a;font-size:18px}
+    .title h1{margin:0;font-size:20px}
+    .title p{margin:6px 0 0 0;color:rgba(11,13,15,0.6);font-size:13px}
+
+    .content{display:grid;grid-template-columns:2fr 380px;gap:18px;margin-top:20px}
+    .card{background:linear-gradient(180deg,var(--panel),var(--glass));padding:20px;border-radius:var(--card-radius);box-shadow:0 8px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.02)}
+    h2{margin:0 0 12px 0}
+    p{color:var(--muted);line-height:1.55}
+
+    .palette-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .swatch{display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;background:rgba(255,255,255,0.015);border:1px solid rgba(255,255,255,0.02)}
+    .chip{width:56px;height:56px;border-radius:8px;flex:0 0 56px;box-shadow:inset 0 -6px 18px rgba(0,0,0,0.25)}
+    .meta{font-size:14px}
+    .meta b{display:block;color:#fff}
+    .muted{color:var(--muted);font-size:13px;margin-top:4px}
+
+    .sidebar h3{margin:0 0 8px 0}
+    .sidebar .list{display:flex;flex-direction:column;gap:8px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:14px;color:#8f969b;font-size:13px}
+
+    .note{background:linear-gradient(90deg,#071018, rgba(255,255,255,0.01));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);color:var(--muted);margin-top:12px}
+
+    @media (max-width:980px){
+      .content{grid-template-columns:1fr}
+      .palette-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="logo">COLOR</div>
+      <div class="title">
+        <h1>Color Roles — Terms of Service</h1>
+        <p>Polished color role management for Discord. Last updated: August 30, 2025</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <main class="card">
+        <h2>1. Overview</h2>
+        <p>
+          Thank you for using <strong>Color Roles</strong> — a tasteful role-coloring utility that helps servers look and feel cohesive.
+          By using the service you agree to these Terms. Be cool. Don’t abuse it.
+        </p>
+
+        <h2 style="margin-top:18px">2. What We Provide</h2>
+        <p>
+          The Bot posts tasteful color selections and assigns roles on button or reaction. Each role is a visual label — nothing more.
+          The service includes: curated palettes, role assignment, role removal, and the /tos page you’re reading now.
+        </p>
+
+        <h2 style="margin-top:18px">3. Acceptable Use</h2>
+        <ul>
+          <li>Use the Bot to manage colors and roles — no harassment, no spamming, no obfuscation of identity.</li>
+          <li>Do not attempt to modify the bot in ways that harm other servers or violate Discord TOS.</li>
+          <li>If your token is exposed, rotate it immediately and notify the owner.</li>
+        </ul>
+
+        <h2 style="margin-top:18px">4. Data & Privacy</h2>
+        <p>
+          Minimal data is stored only to operate role assignment (user IDs & role mapping). We do not sell personal data. For data removal requests contact the owner below.
+        </p>
+
+        <h2 style="margin-top:18px">5. Liability</h2>
+        <p>
+          The Bot is provided “as-is.” The owner is not liable for losses resulting from the use of the Bot. Use at your own risk.
+        </p>
+
+        <div class="note">
+          <strong>Pro tip:</strong> The bot creates roles directly under its own role in the server hierarchy to ensure safe assignment and avoid permission errors.
+        </div>
+
+        <h2 style="margin-top:18px">6. Contact</h2>
+        <p class="small">
+          Owner: <strong>YourName#0000</strong> — Email: <strong>you@domain.com</strong><br>
+          For privacy/dmca/removal requests contact the owner and provide the server ID + evidence.
+        </p>
+
+        <footer>By using the Bot you accept these Terms. Thank you for choosing style.</footer>
+      </main>
+
+      <aside class="card sidebar">
+        <h3>Signature Palette</h3>
+        <div class="palette-grid" style="margin-top:12px">
+          <!-- Pastel -->
+          <div class="swatch">
+            <div class="chip" style="background:#FFB6C1"></div>
+            <div class="meta"><b>Cotton Candy Cloud</b><div class="muted">#FFB6C1 — airy, soft pink</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#B57EDC"></div>
+            <div class="meta"><b>Lavender Haze</b><div class="muted">#B57EDC — dreamy violet</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#FFDAB9"></div>
+            <div class="meta"><b>Peach Nectar</b><div class="muted">#FFDAB9 — warm gentle peach</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#AAF0D1"></div>
+            <div class="meta"><b>Mint Mojito</b><div class="muted">#AAF0D1 — refreshing green</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#AEC6CF"></div>
+            <div class="meta"><b>Blueberry Milk</b><div class="muted">#AEC6CF — soft powder blue</div></div>
+          </div>
+
+          <!-- Neon -->
+          <div class="swatch">
+            <div class="chip" style="background:#FF6EC7"></div>
+            <div class="meta"><b>Neon Dreams</b><div class="muted">#FF6EC7 — electric pop</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#FFD700"></div>
+            <div class="meta"><b>Solar Flare</b><div class="muted">#FFD700 — luminous gold</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#7F00FF"></div>
+            <div class="meta"><b>Ultra Violet Beam</b><div class="muted">#7F00FF — deep neon violet</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#BFFF00"></div>
+            <div class="meta"><b>Toxic Lime</b><div class="muted">#BFFF00 — acidic lime</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#9932CC"></div>
+            <div class="meta"><b>Grape Fizz</b><div class="muted">#9932CC — rich grape tone</div></div>
+          </div>
+
+          <!-- Dark / Moody -->
+          <div class="swatch">
+            <div class="chip" style="background:#0D0D0D"></div>
+            <div class="meta"><b>Midnight Void</b><div class="muted">#0D0D0D — absolute black</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#1A1A1A"></div>
+            <div class="meta"><b>Obsidian Soul</b><div class="muted">#1A1A1A — deep charcoal</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#8B0000"></div>
+            <div class="meta"><b>Crimson Eclipse</b><div class="muted">#8B0000 — blood red</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#696969"></div>
+            <div class="meta"><b>Phantom Grey</b><div class="muted">#696969 — smoky grey</div></div>
+          </div>
+
+          <div class="swatch">
+            <div class="chip" style="background:#2F4F4F"></div>
+            <div class="meta"><b>Lunar Ashen</b><div class="muted">#2F4F4F — muted slate</div></div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:16px">Quick links</h3>
+        <div class="list small" style="margin-top:8px">
+          <a href="/api/tos" style="color:var(--accent-1);text-decoration:none">Terms of Service</a>
+          <a href="/api/privacy" style="color:var(--accent-2);text-decoration:none;margin-left:12px">Privacy Policy</a>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
