@@ -2,13 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SYS color Homie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Bot Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    body { background: #121212; color: #eee; line-height: 1.6; }
+
+    header { 
+      background: linear-gradient(90deg, #FFB6C1, #7F00FF, #2F4F4F); 
+      padding: 2rem; 
+      text-align: center; 
+      color: white; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; opacity: 0.8; }
+
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+
+    .category {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .category:hover { transform: translateY(-5px); }
+
+    .category h2 { margin-bottom: 1rem; font-size: 1.8rem; }
+
+    .colors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .color-box {
+      flex: 1 1 150px;
+      min-width: 120px;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      color: #121212;
+      cursor: default;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .color-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+    }
+
+    .links {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #7F00FF;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .links a:hover { background: #FF6EC7; }
+
+    footer {
+      text-align: center;
+      margin: 3rem 0 1rem;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 600px){
+      .colors { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Color Bot Info</h1>
-  <ul>
-    <li><a href="tos.html">Terms of Service</a></li>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-  </ul>
+
+  <header>
+    <h1>🎨 Color Bot Hub</h1>
+    <p>Manage your color roles and explore our palettes</p>
+  </header>
+
+  <main>
+
+    <section class="category">
+      <h2>Pastel Colors 🌸</h2>
+      <div class="colors">
+        <div class="color-box" style="background:#FFB6C1;">Cotton Candy Cloud</div>
+        <div class="color-box" style="background:#B57EDC;">Lavender Haze</div>
+        <div class="color-box" style="background:#FFDAB9;">Peach Nectar</div>
+        <div class="color-box" style="background:#AAF0D1;">Mint Mojito</div>
+        <div class="color-box" style="background:#AEC6CF;">Blueberry Milk</div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>Neon Colors ⚡</h2>
+      <div class="colors">
+        <div class="color-box" style="background:#FF6EC7;">Neon Dreams</div>
+        <div class="color-box" style="background:#FFD700;">Solar Flare</div>
+        <div class="color-box" style="background:#7F00FF;">Ultra Violet Beam</div>
+        <div class="color-box" style="background:#BFFF00;">Toxic Lime</div>
+        <div class="color-box" style="background:#9932CC;">Grape Fizz</div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>Dark Colors 🌑</h2>
+      <div class="colors">
+        <div class="color-box" style="background:#0D0D0D; color:#fff;">Midnight Void</div>
+        <div class="color-box" style="background:#1A1A1A; color:#fff;">Obsidian Soul</div>
+        <div class="color-box" style="background:#8B0000; color:#fff;">Crimson Eclipse</div>
+        <div class="color-box" style="background:#696969; color:#fff;">Phantom Grey</div>
+        <div class="color-box" style="background:#2F4F4F; color:#fff;">Lunar Ashen</div>
+      </div>
+    </section>
+
+    <div class="links">
+      <a href="tos.html" target="_blank">📄 Terms of Service</a>
+      <a href="privacy.html" target="_blank">🔒 Privacy Policy</a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Color Bot. All rights reserved.
+  </footer>
+
 </body>
 </html>
